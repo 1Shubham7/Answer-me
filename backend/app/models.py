@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class answer(models.Model):
+class answerModel(models.Model):
     title: models.CharField()
     description = models.TextField()
     completed = models.BooleanField(default=False)
