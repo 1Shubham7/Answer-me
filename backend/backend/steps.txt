@@ -1,0 +1,1 @@
+in "npm install -g create-react-app" -> g means globally as we wish to install react app globally
