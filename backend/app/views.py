@@ -1,8 +1,8 @@
 from django.shortcuts import render
-from .serializers import answerSerializer 
+from .serializers import TodoSerializer 
 from rest_framework import viewsets      
-from .models import answerModel                 
+from .models import Todo                 
 
-class answerView(viewsets.ModelViewSet):  
-    serializer_class = answerSerializer   
-    queryset = answerModel.objects.all() 
+class TodoView(viewsets.ModelViewSet):  
+    serializer_class = TodoSerializer   
+    queryset = Todo.objects.all()    

@@ -1,9 +1,7 @@
 from django.contrib import admin
-from .models import answerModel
+from .models import Todo
 
-# Register your models here.
+class TodoAdmin(admin.ModelAdmin):
+  list = ('title', 'description', 'completed')
 
-class answerAdmin(admin.ModelAdmin):
-    list = ("title", "description","completed")
-    
-admin.site.register(answerModel, answerAdmin)
+admin.site.register(Todo, TodoAdmin)
