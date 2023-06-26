@@ -4,8 +4,12 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+djangorestframework = "*"
+django-cors-headers = "*"
 
 [dev-packages]
 
 [requires]
 python_version = "3.11"
+
+//To activate virtual env -> "pipenv shell"
